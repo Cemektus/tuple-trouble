@@ -17,7 +17,7 @@ distances = []
 n = len(points)
 
 for i in range(n):
-    for j in range(i + 1, n):
+    for j in range(i + 1, n): # To make sure each pair is only counted once
         d = euclideanDistance(points[i], points[j])
         distances.append(d)
 
